@@ -1,0 +1,203 @@
+body{
+    margin:0px;
+    
+}
+img{
+    width:100%;
+}
+.navbar{
+    padding:0px;
+    margin:0px; 
+    
+}
+.nav-link {
+ background-color: black;
+ position:fixed;
+ list-style-type:none;
+ font-size: 20px;
+ padding:0px;
+ margin:0px;
+ width: 100%;
+ top:0;
+
+}
+
+.nav-link li{
+  display: block;
+  padding:15px 15px 15px 45px;
+  margin:0px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color:white;
+}
+.nav-link i{
+    position: relative;
+    float:right;
+}
+.image-slide img{
+    width:100%;
+  
+    
+}
+
+.image-slide{
+    margin-top :50px;
+}
+
+#band {
+  text-align:center;
+  margin:70px 10px 50px 10px;
+}
+#band h1{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#band p{
+    text-align:justify;
+}
+
+.band-member img{
+   width:70%
+}
+.tour-date{
+    background-color: black;
+    color:white;
+    padding:40px 20px 20px 20px;
+}
+.ticket-info h1,h4{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+.tour-date ul{
+    background-color: #fff;
+    color:black;
+    list-style-type: none;
+    padding:0px;
+
+}
+.tour-date li{
+    padding:15px;
+    font-size:20px;
+    border:2px solid grey;
+}
+.tour-date span{
+    background-color: red;
+    margin-left:10px;
+    text-align:center;
+    padding: 5px;
+    color:white;
+}
+.card {
+    background-color: #fff;
+    color:black;
+    padding-bottom :30px;
+    margin:20px 10px;
+}
+.card h4,small,p,button{
+    margin-left:20px;
+    text-align:left;
+}
+.card img{
+    max-height: 200px;
+    overflow: hidden;
+}
+.card button{
+    background-color:black;
+    color:white;
+    padding:15px 32px;
+    text-decoration: none;
+    border:none;
+    font-size:16px;
+}
+.contact-us{
+    font-family: 'Titillium Web', sans-serif;
+    padding:10px;
+    margin:15px;   
+}
+.contact-us h2,h5{
+    text-align:center;
+}
+.contact-card{
+    text-align:left;
+}
+.contact-form{
+    margin:10px;
+}
+.contact-form input[type=text],input[type=email]{
+    display:inline-block;
+    margin:10px 0;
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+.contact-form input[type=button]{
+    border:none;
+    padding:10px 20px;
+    float:right;
+    background-color: black;
+    color: white;
+}
+footer{
+    text-align: center;
+    margin-top:30px;
+}
+footer p{
+    text-align: center;
+}
+
+@media only screen and (min-width:768px){
+.nav-link i{
+    display: none;
+}
+.nav-link ul{
+    padding:10px;
+    margin:20px 30px;
+    box-sizing: border-box;
+}
+.nav-link li{
+    display: inline-block;
+    padding:15px 15px 15px 45px;
+    margin:0px;
+}
+.nav-link a{
+    padding-top: 20px;
+}
+.image-slide {
+  max-height: 650px;
+  overflow: hidden;
+  
+}
+#band{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+.band-info{
+    grid-column-start :1;
+    grid-column-end: 4;
+    margin:30px 100px;
+}
+.tour-date{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+.ticket-info{
+    grid-column: 2/span 3;  
+}
+.card-1{
+  grid-column: 2/span 1;
+}
+.contact-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.contact-card{
+    padding:0 100px;
+    box-sizing: border-box;
+}
+}
